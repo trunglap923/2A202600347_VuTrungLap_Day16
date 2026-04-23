@@ -1,0 +1,2052 @@
+{
+  "meta": {
+    "dataset": "hotpot_100.json",
+    "mode": "actual",
+    "num_records": 200,
+    "agents": [
+      "react",
+      "reflexion"
+    ]
+  },
+  "summary": {
+    "react": {
+      "count": 100,
+      "em": 0.8,
+      "avg_attempts": 1,
+      "avg_token_estimate": 1863.73,
+      "avg_latency_ms": 3364.67
+    },
+    "reflexion": {
+      "count": 100,
+      "em": 0.91,
+      "avg_attempts": 1.3,
+      "avg_token_estimate": 2976.59,
+      "avg_latency_ms": 5250.13
+    },
+    "delta_reflexion_minus_react": {
+      "em_abs": 0.11,
+      "attempts_abs": 0.3,
+      "tokens_abs": 1112.86,
+      "latency_abs": 1885.46
+    }
+  },
+  "failure_modes": {
+    "react": {
+      "none": 80,
+      "wrong_final_answer": 20
+    },
+    "reflexion": {
+      "none": 91,
+      "looping": 9
+    }
+  },
+  "examples": [
+    {
+      "qid": "5a832c3455429954d2e2ec41",
+      "agent_type": "react",
+      "gold_answer": "Badr Hari",
+      "predicted_answer": "Badr Hari was once considered the best kickboxer in the world, however he has been involved in a number of controversies relating to his \"unsportsmanlike conducts\" in the sport and crimes of violence outside of the ring.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ade025e5542997dc790711e",
+      "agent_type": "react",
+      "gold_answer": "Super Bowl XLVIII",
+      "predicted_answer": "Malcolm Smith was named Most Valuable Player of Super Bowl XLVIII.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac2a5d455429921a00ab01b",
+      "agent_type": "react",
+      "gold_answer": "Hetfield and Ulrich, longtime lead guitarist Kirk Hammett, and bassist Robert Trujillo.",
+      "predicted_answer": "The current members of the American heavy metal band that wrote the music for Hurt Locker The Musical are James Hetfield, Lars Ulrich, Kirk Hammett, and Robert Trujillo from Metallica.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a83168855429966c78a6b2e",
+      "agent_type": "react",
+      "gold_answer": "2017",
+      "predicted_answer": "Dua Lipa's eponymous debut studio album was released in 2017.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab698885542995eadef002a",
+      "agent_type": "react",
+      "gold_answer": "Nevada",
+      "predicted_answer": "Catherine Cortez Masto previously served as the 32nd Attorney General of Nevada.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adf732a5542993a75d264e9",
+      "agent_type": "react",
+      "gold_answer": "Kelli Ward",
+      "predicted_answer": "I cannot answer.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a76a401554299373536012b",
+      "agent_type": "react",
+      "gold_answer": "Carol Lawrence",
+      "predicted_answer": "The young performer and American actress whose career was jump-started by \"New Faces of 1952\" is Eartha Kitt.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8b63755542997f31a41cfe",
+      "agent_type": "react",
+      "gold_answer": "New York City",
+      "predicted_answer": "New York City",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac15df95542994d76dccded",
+      "agent_type": "react",
+      "gold_answer": "Amy Jo Johnson",
+      "predicted_answer": "The actress who played the part of Kimberly Ann Hart is Amy Jo Johnson.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8a2ebc5542996c9b8d5e33",
+      "agent_type": "react",
+      "gold_answer": "Australia",
+      "predicted_answer": "The Honoured Society, a Calabrian 'Ndrangheta criminal confederation, is currently active in all of Australia.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add28c85542992ae4cec4be",
+      "agent_type": "react",
+      "gold_answer": "California",
+      "predicted_answer": "California",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abe3f9455429976d4830aaa",
+      "agent_type": "react",
+      "gold_answer": "Roman Catholic",
+      "predicted_answer": "The faith designated to the University of Providence is Roman Catholic.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a74248855429929fddd83e5",
+      "agent_type": "react",
+      "gold_answer": "Dennis Howard Marks",
+      "predicted_answer": "The Welsh member who died on 10 April 2016 is Howard Marks.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abd04f15542996e802b467e",
+      "agent_type": "react",
+      "gold_answer": "Robert Sheehan",
+      "predicted_answer": "Robert Sheehan starred in The Messenger.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8ae49155429951533613a3",
+      "agent_type": "react",
+      "gold_answer": "Sex and the City",
+      "predicted_answer": "Cynthia Nixon received the 2004 Primetime Emmy Award for Outstanding Supporting Actress in a Comedy Series for her role in \"Sex and the City.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab99943554299131ca42391",
+      "agent_type": "react",
+      "gold_answer": "England",
+      "predicted_answer": "Goodison Park is located in England.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab70446554299110f219a94",
+      "agent_type": "react",
+      "gold_answer": "Robert Zemeckis",
+      "predicted_answer": "Roger Avary wrote the screenplay for Beowulf, which was directed by Robert Zemeckis.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae6038155429929b0807a55",
+      "agent_type": "react",
+      "gold_answer": "South Park",
+      "predicted_answer": "\"Funnybot\" is the second episode of the fifteenth season of \"South Park\".",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a71458e5542994082a3e738",
+      "agent_type": "react",
+      "gold_answer": "Boston College",
+      "predicted_answer": "Boston College is the private research university located in Chestnut Hill, Massachusetts.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a73332b5542992359bc3287",
+      "agent_type": "react",
+      "gold_answer": "Victor John Mature",
+      "predicted_answer": "Victor Mature played Samson in the 1949 film \"Samson and Delilah\".",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae500fd55429908b63264d8",
+      "agent_type": "react",
+      "gold_answer": "Canada",
+      "predicted_answer": "Iqaluit Airport and Canadian North are based out of Canada.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab9121555429919ba4e238a",
+      "agent_type": "react",
+      "gold_answer": "Keyshia Cole",
+      "predicted_answer": "The American singer/songwriter featured in \"I Got a Thang for You\" is Keyshia Cole.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac52b495542994611c8b3de",
+      "agent_type": "react",
+      "gold_answer": "Band of Brothers",
+      "predicted_answer": "Peter O'Meara portrayed Norman Dike in the HBO miniseries \"Band of Brothers.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae5b3df5542992663a4f20b",
+      "agent_type": "react",
+      "gold_answer": "Train to Busan",
+      "predicted_answer": "Kim Yool-ho starred in the 2016 movie \"Train to Busan.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab9672655429970cfb8eabd",
+      "agent_type": "react",
+      "gold_answer": "rock band",
+      "predicted_answer": "Both Richard Hawley and Chicago's Catherine belong to the music industry, specifically in the genres of alternative rock and singer-songwriter.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7ca54c55429935c91b527f",
+      "agent_type": "react",
+      "gold_answer": "CEO of Lionsgate UK & Europe",
+      "predicted_answer": "Zygi Kamasa currently serves as CEO of Lionsgate UK & Europe and was the Executive Producer for \"London Has Fallen.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a90c2b35542995651fb51df",
+      "agent_type": "react",
+      "gold_answer": "Swoosie Kurtz",
+      "predicted_answer": "The name of the Emmy Award winner and two-time Tony Award winner who appeared in episode 15 of the third season of \"Chuck\" is Swoosie Kurtz.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab30bbb55429976abd1bc39",
+      "agent_type": "react",
+      "gold_answer": "Great Britain",
+      "predicted_answer": "Prince William, Duke of Gloucester, and Prince George of Denmark were eventually monarchs of Great Britain.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a0d455542990783324e13",
+      "agent_type": "react",
+      "gold_answer": "July 5, 1984",
+      "predicted_answer": "Yeon Woo-jin",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac068d25542996f0d89cba2",
+      "agent_type": "react",
+      "gold_answer": "Turkey",
+      "predicted_answer": "G\u00fclhane Park and Zografeion Lyceum are located in Turkey.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae64cbf5542992ae0d162c1",
+      "agent_type": "react",
+      "gold_answer": "300",
+      "predicted_answer": "Gary Harrison has written over 300 major-label recorded songs including several number-one hits.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3dad4554299753aec59cb",
+      "agent_type": "react",
+      "gold_answer": "2,586",
+      "predicted_answer": "The context does not provide the population of the nearby city that shares a zipcode with Hot Coffee, Mississippi. Therefore, I cannot answer.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8e171b554299068b959e5a",
+      "agent_type": "react",
+      "gold_answer": "English",
+      "predicted_answer": "Both Pearl Lowe and Alison Goldfrapp are English.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a06935542990198eaf050",
+      "agent_type": "react",
+      "gold_answer": "Arthur's Magazine",
+      "predicted_answer": "Arthur's Magazine was started first in 1844, while First for Women was started in 1989.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a879ab05542996e4f30887e",
+      "agent_type": "react",
+      "gold_answer": "Delhi",
+      "predicted_answer": "The Oberoi family is part of a hotel company that has a head office in Delhi.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a82171f5542990a1d231f4a",
+      "agent_type": "react",
+      "gold_answer": "American",
+      "predicted_answer": "I cannot answer.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a84dd955542997b5ce3ff79",
+      "agent_type": "react",
+      "gold_answer": "alcohol",
+      "predicted_answer": "Cadmium Chloride is also called CdCl.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7e36045542991319bc9440",
+      "agent_type": "react",
+      "gold_answer": "Jonathan Stark",
+      "predicted_answer": "Henri Leconte won one Grand Slam title (French Open men's doubles), while Jonathan Stark won two Grand Slam titles (1994 French Open Men's Doubles and 1995 Wimbledon Championships Mixed Doubles). Therefore, Jonathan Stark won more Grand Slam titles than Henri Leconte.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7d0db955429909bec76924",
+      "agent_type": "react",
+      "gold_answer": "2006",
+      "predicted_answer": "The Dutch-Belgian television series that \"House of Anubis\" was based on, \"Het Huis Anubis,\" first aired in September 2006.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abd90545542996e802b47d7",
+      "agent_type": "react",
+      "gold_answer": "Jaime Meline",
+      "predicted_answer": "The hip hop record executive who makes a guest appearance in Fast Cars, Danger, Fire and Knives is El-P.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5aba66c855429939ce03dcdb",
+      "agent_type": "react",
+      "gold_answer": "Walter Darwin Coy",
+      "predicted_answer": "The narrator of \"Frontier\" is Walter Coy.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7722d655429966f1a36c99",
+      "agent_type": "react",
+      "gold_answer": "United States",
+      "predicted_answer": "The form of music played by Die Rh\u00f6ner S\u00e4uw\u00e4ntzt originated in Eichenzell-L\u00fctter, Hessen, Germany.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae0d91e55429924de1b7198",
+      "agent_type": "react",
+      "gold_answer": "2006",
+      "predicted_answer": "Annette Bening received a star on the Hollywood Walk of Fame in 2006.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adc1309554299438c868d3b",
+      "agent_type": "react",
+      "gold_answer": "Fox",
+      "predicted_answer": "\"Human Error\" is the season finale of the third season of \"House,\" which aired on the Fox network.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab345db55429969a97a8122",
+      "agent_type": "react",
+      "gold_answer": "Hawaii",
+      "predicted_answer": "The drug stores of which the CEO is Warren Bryant are located in California.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac2a912554299218029dae8",
+      "agent_type": "react",
+      "gold_answer": "The Wolfhounds",
+      "predicted_answer": "Hole was founded in 1989, while The Wolfhounds were formed in 1985. Therefore, The Wolfhounds were founded first.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7272eb5542997f827839d7",
+      "agent_type": "react",
+      "gold_answer": "16-year-old",
+      "predicted_answer": "Katniss Everdeen, the female main protagonist of \"Catching Fire,\" is 16 years old.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac2c3545542990b17b1548b",
+      "agent_type": "react",
+      "gold_answer": "World War II",
+      "predicted_answer": "Chang Ucchin was born in Korea during a time that ended with the conclusion of World War II in 1945.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae3918b5542994393b9e709",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No, Pavel Urysohn and Leonid Levin were not known for the same type of work. Urysohn was a mathematician known for contributions in topology, while Levin is a computer scientist.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac061ab554299294b218fac",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes, both Jane and First for Women are women's magazines.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab5a2f85542997d4ad1f197",
+      "agent_type": "react",
+      "gold_answer": "director",
+      "predicted_answer": "Both Nicholas Ray and Elia Kazan are film directors.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abd7ca05542993062266cab",
+      "agent_type": "react",
+      "gold_answer": "Roseau, Minnesota, USA",
+      "predicted_answer": "The company that purchased Aixam, Polaris Industries, is based in Roseau, Minnesota, USA.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8ce5c7554299441c6b9f64",
+      "agent_type": "react",
+      "gold_answer": "The Saimaa Gesture",
+      "predicted_answer": "The documentary about Finnish rock groups is \"The Saimaa Gesture.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a81ff1d554299676cceb1c3",
+      "agent_type": "react",
+      "gold_answer": "David Lee Roth",
+      "predicted_answer": "David Lee Roth was inducted into the Rock and Roll Hall of Fame.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae732685542991e8301cbc3",
+      "agent_type": "react",
+      "gold_answer": "Nassau County",
+      "predicted_answer": "Guwe Secondary School has a sister school in Nassau County, New York.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7d90195542991319bc93cf",
+      "agent_type": "react",
+      "gold_answer": "Dessau",
+      "predicted_answer": "The axial turbojet Pirna 014 was designed by engineers from Junkers, which is based in Dessau, Germany.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abee5e25542994516f45473",
+      "agent_type": "react",
+      "gold_answer": "The Joshua Tree",
+      "predicted_answer": "The cover song by Pauline Henry was from the album \"The Chimes.\"",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a760a5f554299109176e629",
+      "agent_type": "react",
+      "gold_answer": "Tammy Wynette",
+      "predicted_answer": "Tammy Wynette sang a duet with her ex-husband George Jones the same year he released the song \"The Battle.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac3ad225542995ef918c1da",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No, a Gin and tonic is based on gin, while a Paloma is based on tequila.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a74bdbf5542996c70cfadc7",
+      "agent_type": "react",
+      "gold_answer": "Kato",
+      "predicted_answer": "Lee Jun-fan played the character Kato in \"The Green Hornet\" television series.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8195f35542995ce29dcc0c",
+      "agent_type": "react",
+      "gold_answer": "Province of Buenos Aires",
+      "predicted_answer": "The Estadio Ciudad de La Plata, also known as Estadio \u00danico, is owned by the Province of Buenos Aires.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adbe1e755429947ff173853",
+      "agent_type": "react",
+      "gold_answer": "1932",
+      "predicted_answer": "The American Pre-Code comedy film featuring an American actress, dancer, and singer, widely known for performing in films and RKO's musical films, was released in 1932.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a904e725542995651fb5118",
+      "agent_type": "react",
+      "gold_answer": "nine",
+      "predicted_answer": "The song \"Bette Davis Eyes\" by Kim Carnes spent nine weeks at No. 1 on the \"Billboard\" Hot 100.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab292e4554299545a2cf993",
+      "agent_type": "react",
+      "gold_answer": "Conservative",
+      "predicted_answer": "The man who officially opened the Royal Spa Centre in 1972, Anthony Eden, was a member of the Conservative Party.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8514545542992a431d1ad2",
+      "agent_type": "react",
+      "gold_answer": "Salaam Bombay",
+      "predicted_answer": "The Oscar-nominated film written by the screenwriter who wrote a 1991 romantic drama based upon a screenplay by Sooni Taraporevala is \"Salaam Bombay.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae3345f55429928c4239682",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes, both Tim McIlrath and Spike Slawson are American punk rock musicians.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8d7341554299441c6b9fe5",
+      "agent_type": "react",
+      "gold_answer": "President Richard Nixon",
+      "predicted_answer": "Milhouse was named after President Richard Nixon's middle name.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adf44985542993a75d2646d",
+      "agent_type": "react",
+      "gold_answer": "Crambidae",
+      "predicted_answer": "The genus of moth in the world's seventh-largest country that contains only one species is Nepita.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a89372855429951533612e6",
+      "agent_type": "react",
+      "gold_answer": "6.213 km long",
+      "predicted_answer": "The length of the track where the 2013 Liqui Moly Bathurst 12 Hour was staged is 6.213 km.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab381b155429969a97a816b",
+      "agent_type": "react",
+      "gold_answer": "US 60",
+      "predicted_answer": "U.S. Highway 60",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae3b4d05542992f92d82349",
+      "agent_type": "react",
+      "gold_answer": "Todd Phillips",
+      "predicted_answer": "The director of the 2003 film that has scenes filmed at the Quality Cafe in Los Angeles is Todd Phillips.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8efd3c55429918e830d179",
+      "agent_type": "react",
+      "gold_answer": "no",
+      "predicted_answer": "No, The New Pornographers is a Canadian rock band, while Kings of Leon is an American rock band.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a02235542996c55b2dcd3",
+      "agent_type": "react",
+      "gold_answer": "Aleksander Ford",
+      "predicted_answer": "Pablo Trapero was born on 4 October 1971, while Aleksander Ford was born on 24 November 1908. Therefore, Aleksander Ford was born first.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae78ec5554299540e5a5605",
+      "agent_type": "react",
+      "gold_answer": "Ulster County",
+      "predicted_answer": "Guitars for Wounded Warriors was recorded in the village of New Paltz, which is located in Ulster County, New York.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a52745542996c55b2dd4f",
+      "agent_type": "react",
+      "gold_answer": "Sir Francis Nethersole",
+      "predicted_answer": "Elizabeth Stuart was born first, on 19 August 1596, while Francis Nethersole was born later, in 1587.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac1f7f355429964131be2ae",
+      "agent_type": "react",
+      "gold_answer": "ingredients in beer",
+      "predicted_answer": "The Hacker-Pschorr Brewery must limit the ingredients in beer to comply with German regulations, specifically the Reinheitsgebot Purity Law.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a736bfa5542991f29ee2e03",
+      "agent_type": "react",
+      "gold_answer": "Glenn Hughes",
+      "predicted_answer": "Glenn Hughes is older than Ross Lynch.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5addfe6c5542997dc790710e",
+      "agent_type": "react",
+      "gold_answer": "March 28, 1941",
+      "predicted_answer": "The creator of the current arrangement of the \"Simpson's Theme,\" Alf Clausen, was born on March 28, 1941.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a0a965542996c55b2dce7",
+      "agent_type": "react",
+      "gold_answer": "standard gauge track",
+      "predicted_answer": "The Southern Railway runs via the first mountain railway built in Europe to use standard gauge track.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7daae35542990b8f503a1d",
+      "agent_type": "react",
+      "gold_answer": "Saint Motel",
+      "predicted_answer": "Saint Motel has 4 members, while Curve has 2 members. Therefore, Saint Motel has more members than Curve.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abbbd0f55429931dba144d5",
+      "agent_type": "react",
+      "gold_answer": "dancer Gregory Hines",
+      "predicted_answer": "Maurice Hines and his brother Gregory Hines were famous for their contributions to the performing arts, particularly in dance and musical theater.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac3e8c65542997ea680c993",
+      "agent_type": "react",
+      "gold_answer": "yes",
+      "predicted_answer": "The context does not provide the length of the New Orleans Outfall Canals, so I cannot answer whether they are the same length as the Augusta Canal.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab6e84a554299710c8d1fab",
+      "agent_type": "react",
+      "gold_answer": "Hawaii",
+      "predicted_answer": "Hawaii",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab5141a5542991779162d70",
+      "agent_type": "react",
+      "gold_answer": "Academy of Motion Picture Arts and Sciences",
+      "predicted_answer": "The organization that presents the award for which Chris Noonan was nominated for his work in \"Babe\" is the Academy of Motion Picture Arts and Sciences (AMPAS).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a832d225542990548d0b1bc",
+      "agent_type": "react",
+      "gold_answer": "Cheltenham",
+      "predicted_answer": "The base of one of the three main British intelligence agencies, specifically the Government Communications Headquarters (GCHQ), is located in \"The Doughnut\" in the suburbs of Cheltenham.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ade8f5e55429975fa854f11",
+      "agent_type": "react",
+      "gold_answer": "10 Rillington Place",
+      "predicted_answer": "The name of the movie in which Edwin Brown plays a man that executed at least 400 people, including William Joyce and John Amery, is \"10 Rillington Place.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac1b7495542994ab5c67dd9",
+      "agent_type": "react",
+      "gold_answer": "synth-pop",
+      "predicted_answer": "The solo artist that contributed to Real Damage, Tracy + the Plastics, is a variant of the electropop genre.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae27edc5542992decbdcd2d",
+      "agent_type": "react",
+      "gold_answer": "Roger Christian",
+      "predicted_answer": "Jake David Shapiro was best known for being the screenwriter of \"Battlefield Earth,\" which was directed by Roger Christian.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab93287554299753720f78f",
+      "agent_type": "react",
+      "gold_answer": "plant",
+      "predicted_answer": "I cannot answer.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae2e27155429928c423952a",
+      "agent_type": "react",
+      "gold_answer": "375 mi long",
+      "predicted_answer": "I cannot answer.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7e567b55429949594199a0",
+      "agent_type": "react",
+      "gold_answer": "Craig Newmark",
+      "predicted_answer": "The American internet entrepreneur who founded the company featured on 24 Hours on Craigslist is Craig Newmark.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac12fda5542994d76dccdb0",
+      "agent_type": "react",
+      "gold_answer": "Pan American Games",
+      "predicted_answer": "Jo Ann Terry won the 80 m hurdles event at the 1963 Pan American Games.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae655c855429908198fa599",
+      "agent_type": "react",
+      "gold_answer": "Cognizant",
+      "predicted_answer": "The name of the American multinational corporation that provides IT services, headquartered in New Jersey, and acquired Mirabeau is Cognizant.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae3cf7e5542990afbd1e1e2",
+      "agent_type": "react",
+      "gold_answer": "Presque Isle",
+      "predicted_answer": "The 3112 acre Pennsylvania state park that took over 11,000 years to make due to the wave action of Lake Erie is called Presque Isle State Park.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae3dde35542992f92d823a4",
+      "agent_type": "react",
+      "gold_answer": "Select Security Stadium",
+      "predicted_answer": "I cannot answer.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adccafb5542992c1e3a2401",
+      "agent_type": "react",
+      "gold_answer": "Isabelle Mergault",
+      "predicted_answer": "Guillaume Canet chaired the ceremony in which the film written by Canet and Philippe Lefebvre won the award for Best Film.",
+      "is_correct": false,
+      "attempts": 1,
+      "failure_mode": "wrong_final_answer",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adf01425542995ec70e8f53",
+      "agent_type": "react",
+      "gold_answer": "0.9 s.",
+      "predicted_answer": "The Deal Timeball can be off from Coordinated Universal Time (UTC) by up to 0.9 seconds.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac5247c55429924173fb602",
+      "agent_type": "react",
+      "gold_answer": "Halestorm",
+      "predicted_answer": "\"Apocalyptic\" is a song sung by Lzzy Hale from the group Halestorm.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7f8a535542994857a76778",
+      "agent_type": "react",
+      "gold_answer": "2,523",
+      "predicted_answer": "The town that the Pineground Bridge formerly carried Depot Road over the Suncook River into has a population of 2,523.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac36a07554299218029dbd5",
+      "agent_type": "react",
+      "gold_answer": "Albuquerque, New Mexico",
+      "predicted_answer": "The American rock band that released their album on March 19, 2012, is The Shins, and they are from Albuquerque, New Mexico.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a832c3455429954d2e2ec41",
+      "agent_type": "reflexion",
+      "gold_answer": "Badr Hari",
+      "predicted_answer": "Badr Hari was once considered the best kickboxer in the world, however he has been involved in a number of controversies relating to his \"unsportsmanlike conducts\" in the sport and crimes of violence outside of the ring.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ade025e5542997dc790711e",
+      "agent_type": "reflexion",
+      "gold_answer": "Super Bowl XLVIII",
+      "predicted_answer": "Malcolm Smith was named Most Valuable Player of Super Bowl XLVIII.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac2a5d455429921a00ab01b",
+      "agent_type": "reflexion",
+      "gold_answer": "Hetfield and Ulrich, longtime lead guitarist Kirk Hammett, and bassist Robert Trujillo.",
+      "predicted_answer": "The current members of the American heavy metal band that wrote the music for Hurt Locker The Musical are James Hetfield, Lars Ulrich, Kirk Hammett, and Robert Trujillo from Metallica.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a83168855429966c78a6b2e",
+      "agent_type": "reflexion",
+      "gold_answer": "2017",
+      "predicted_answer": "Dua Lipa's eponymous debut studio album was released in 2017.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab698885542995eadef002a",
+      "agent_type": "reflexion",
+      "gold_answer": "Nevada",
+      "predicted_answer": "Catherine Cortez Masto previously served as the 32nd Attorney General of Nevada.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adf732a5542993a75d264e9",
+      "agent_type": "reflexion",
+      "gold_answer": "Kelli Ward",
+      "predicted_answer": "Sue Donahue replaced Kelli Ward.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a76a401554299373536012b",
+      "agent_type": "reflexion",
+      "gold_answer": "Carol Lawrence",
+      "predicted_answer": "The young performer whose career was jump-started by \"New Faces of 1952\" is Carol Lawrence.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a8b63755542997f31a41cfe",
+      "agent_type": "reflexion",
+      "gold_answer": "New York City",
+      "predicted_answer": "New York City",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac15df95542994d76dccded",
+      "agent_type": "reflexion",
+      "gold_answer": "Amy Jo Johnson",
+      "predicted_answer": "The actress who played the part of Kimberly Ann Hart is Amy Jo Johnson.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8a2ebc5542996c9b8d5e33",
+      "agent_type": "reflexion",
+      "gold_answer": "Australia",
+      "predicted_answer": "The Honoured Society, a Calabrian 'Ndrangheta criminal confederation, is currently active in all of Australia.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5add28c85542992ae4cec4be",
+      "agent_type": "reflexion",
+      "gold_answer": "California",
+      "predicted_answer": "California",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abe3f9455429976d4830aaa",
+      "agent_type": "reflexion",
+      "gold_answer": "Roman Catholic",
+      "predicted_answer": "The faith designated to the University of Providence is Roman Catholic.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a74248855429929fddd83e5",
+      "agent_type": "reflexion",
+      "gold_answer": "Dennis Howard Marks",
+      "predicted_answer": "The Welsh member who died on 10 April 2016 is Howard Marks.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abd04f15542996e802b467e",
+      "agent_type": "reflexion",
+      "gold_answer": "Robert Sheehan",
+      "predicted_answer": "Robert Sheehan starred in The Messenger.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8ae49155429951533613a3",
+      "agent_type": "reflexion",
+      "gold_answer": "Sex and the City",
+      "predicted_answer": "Cynthia Nixon received the 2004 Primetime Emmy Award for Outstanding Supporting Actress in a Comedy Series for her role in \"Sex and the City.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab99943554299131ca42391",
+      "agent_type": "reflexion",
+      "gold_answer": "England",
+      "predicted_answer": "Goodison Park is located in England.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab70446554299110f219a94",
+      "agent_type": "reflexion",
+      "gold_answer": "Robert Zemeckis",
+      "predicted_answer": "Roger Avary wrote the screenplay for Beowulf, which was directed by Robert Zemeckis.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae6038155429929b0807a55",
+      "agent_type": "reflexion",
+      "gold_answer": "South Park",
+      "predicted_answer": "\"Funnybot\" is the second episode of the fifteenth season of \"South Park\".",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a71458e5542994082a3e738",
+      "agent_type": "reflexion",
+      "gold_answer": "Boston College",
+      "predicted_answer": "Boston College is the private research university located in Chestnut Hill, Massachusetts.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a73332b5542992359bc3287",
+      "agent_type": "reflexion",
+      "gold_answer": "Victor John Mature",
+      "predicted_answer": "Victor Mature played Samson in the 1949 film \"Samson and Delilah\".",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae500fd55429908b63264d8",
+      "agent_type": "reflexion",
+      "gold_answer": "Canada",
+      "predicted_answer": "Iqaluit Airport and Canadian North are based out of Canada.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab9121555429919ba4e238a",
+      "agent_type": "reflexion",
+      "gold_answer": "Keyshia Cole",
+      "predicted_answer": "The American singer/songwriter featured in \"I Got a Thang for You\" is Keyshia Cole.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac52b495542994611c8b3de",
+      "agent_type": "reflexion",
+      "gold_answer": "Band of Brothers",
+      "predicted_answer": "Peter O'Meara portrayed Norman Dike in the HBO miniseries \"Band of Brothers.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae5b3df5542992663a4f20b",
+      "agent_type": "reflexion",
+      "gold_answer": "Train to Busan",
+      "predicted_answer": "Kim Yool-ho starred in the 2016 movie \"Train to Busan.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab9672655429970cfb8eabd",
+      "agent_type": "reflexion",
+      "gold_answer": "rock band",
+      "predicted_answer": "Both Richard Hawley and Chicago's Catherine belong to the rock music industry.",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5a7ca54c55429935c91b527f",
+      "agent_type": "reflexion",
+      "gold_answer": "CEO of Lionsgate UK & Europe",
+      "predicted_answer": "Zygi Kamasa currently serves as CEO of Lionsgate UK & Europe and was the Executive Producer for \"London Has Fallen.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a90c2b35542995651fb51df",
+      "agent_type": "reflexion",
+      "gold_answer": "Swoosie Kurtz",
+      "predicted_answer": "The name of the Emmy Award winner and two-time Tony Award winner who appeared in episode 15 of the third season of \"Chuck\" is Swoosie Kurtz.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab30bbb55429976abd1bc39",
+      "agent_type": "reflexion",
+      "gold_answer": "Great Britain",
+      "predicted_answer": "Prince William, Duke of Gloucester, and Prince George of Denmark were eventually monarchs of Great Britain.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a0d455542990783324e13",
+      "agent_type": "reflexion",
+      "gold_answer": "July 5, 1984",
+      "predicted_answer": "The South Korean actor starring in \"When a Man Falls in Love\" is Yeon Woo-jin, who was born on July 5, 1984.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac068d25542996f0d89cba2",
+      "agent_type": "reflexion",
+      "gold_answer": "Turkey",
+      "predicted_answer": "G\u00fclhane Park and Zografeion Lyceum are located in Turkey.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae64cbf5542992ae0d162c1",
+      "agent_type": "reflexion",
+      "gold_answer": "300",
+      "predicted_answer": "Gary Harrison has written over 300 major-label recorded songs including several number-one hits.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab3dad4554299753aec59cb",
+      "agent_type": "reflexion",
+      "gold_answer": "2,586",
+      "predicted_answer": "The population of Collins, Mississippi at the 2010 census was 2,586.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a8e171b554299068b959e5a",
+      "agent_type": "reflexion",
+      "gold_answer": "English",
+      "predicted_answer": "Both Pearl Lowe and Alison Goldfrapp are English.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a06935542990198eaf050",
+      "agent_type": "reflexion",
+      "gold_answer": "Arthur's Magazine",
+      "predicted_answer": "Arthur's Magazine was started first in 1844, while First for Women was started in 1989.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a879ab05542996e4f30887e",
+      "agent_type": "reflexion",
+      "gold_answer": "Delhi",
+      "predicted_answer": "The Oberoi family is part of a hotel company that has a head office in Delhi.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a82171f5542990a1d231f4a",
+      "agent_type": "reflexion",
+      "gold_answer": "American",
+      "predicted_answer": "June Miller, James Henry Miller's wife, was American.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5a84dd955542997b5ce3ff79",
+      "agent_type": "reflexion",
+      "gold_answer": "alcohol",
+      "predicted_answer": "Cadmium Chloride is also known as CdCl.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "looping",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5a7e36045542991319bc9440",
+      "agent_type": "reflexion",
+      "gold_answer": "Jonathan Stark",
+      "predicted_answer": "Henri Leconte won one Grand Slam title (French Open men's doubles), while Jonathan Stark won two Grand Slam titles (1994 French Open Men's Doubles and 1995 Wimbledon Championships Mixed Doubles). Therefore, Jonathan Stark won more Grand Slam titles than Henri Leconte.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7d0db955429909bec76924",
+      "agent_type": "reflexion",
+      "gold_answer": "2006",
+      "predicted_answer": "The Dutch-Belgian television series that \"House of Anubis\" was based on first aired in September 2006.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abd90545542996e802b47d7",
+      "agent_type": "reflexion",
+      "gold_answer": "Jaime Meline",
+      "predicted_answer": "The hip hop record executive who makes a guest appearance on Fast Cars, Danger, Fire and Knives is El-P.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "looping",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5aba66c855429939ce03dcdb",
+      "agent_type": "reflexion",
+      "gold_answer": "Walter Darwin Coy",
+      "predicted_answer": "The narrator of \"Frontier\" is Walter Coy.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7722d655429966f1a36c99",
+      "agent_type": "reflexion",
+      "gold_answer": "United States",
+      "predicted_answer": "The form of music played by Die Rh\u00f6ner S\u00e4uw\u00e4ntzt, which is Skiffle, originated in the United States.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ae0d91e55429924de1b7198",
+      "agent_type": "reflexion",
+      "gold_answer": "2006",
+      "predicted_answer": "Annette Bening received a star on the Hollywood Walk of Fame in 2006.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adc1309554299438c868d3b",
+      "agent_type": "reflexion",
+      "gold_answer": "Fox",
+      "predicted_answer": "\"Human Error\" is the season finale of the third season of \"House,\" which aired on the Fox network.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab345db55429969a97a8122",
+      "agent_type": "reflexion",
+      "gold_answer": "Hawaii",
+      "predicted_answer": "Warren Bryant is the CEO of Longs Drugs, which is located in California.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "looping",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5ac2a912554299218029dae8",
+      "agent_type": "reflexion",
+      "gold_answer": "The Wolfhounds",
+      "predicted_answer": "Hole was founded in 1989, while The Wolfhounds were formed in 1985. Therefore, The Wolfhounds were founded first.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7272eb5542997f827839d7",
+      "agent_type": "reflexion",
+      "gold_answer": "16-year-old",
+      "predicted_answer": "Katniss Everdeen, the female main protagonist of \"Catching Fire,\" is 16 years old.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac2c3545542990b17b1548b",
+      "agent_type": "reflexion",
+      "gold_answer": "World War II",
+      "predicted_answer": "Chang Ucchin was born in Korea during a time that ended with the conclusion of World War II in 1945.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae3918b5542994393b9e709",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No, Pavel Urysohn and Leonid Levin were not known for the same type of work. Urysohn was a mathematician known for contributions in topology, while Levin is a computer scientist.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac061ab554299294b218fac",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes, both Jane and First for Women are women's magazines.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab5a2f85542997d4ad1f197",
+      "agent_type": "reflexion",
+      "gold_answer": "director",
+      "predicted_answer": "Both Nicholas Ray and Elia Kazan are film directors.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abd7ca05542993062266cab",
+      "agent_type": "reflexion",
+      "gold_answer": "Roseau, Minnesota, USA",
+      "predicted_answer": "The company that purchased Aixam, Polaris Industries, is based in Roseau, Minnesota, USA.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8ce5c7554299441c6b9f64",
+      "agent_type": "reflexion",
+      "gold_answer": "The Saimaa Gesture",
+      "predicted_answer": "The documentary about Finnish rock groups is \"The Saimaa Gesture.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a81ff1d554299676cceb1c3",
+      "agent_type": "reflexion",
+      "gold_answer": "David Lee Roth",
+      "predicted_answer": "David Lee Roth was inducted into the Rock and Roll Hall of Fame.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae732685542991e8301cbc3",
+      "agent_type": "reflexion",
+      "gold_answer": "Nassau County",
+      "predicted_answer": "Guwe Secondary School has a sister school in Nassau County, New York.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7d90195542991319bc93cf",
+      "agent_type": "reflexion",
+      "gold_answer": "Dessau",
+      "predicted_answer": "The axial turbojet Pirna 014 was designed by engineers from Junkers, which is based in Dessau, Germany.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abee5e25542994516f45473",
+      "agent_type": "reflexion",
+      "gold_answer": "The Joshua Tree",
+      "predicted_answer": "The cover song \"I Still Haven't Found What I'm Looking For\" performed by Pauline Henry is from U2's album \"The Joshua Tree.\"",
+      "is_correct": true,
+      "attempts": 3,
+      "failure_mode": "none",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5a760a5f554299109176e629",
+      "agent_type": "reflexion",
+      "gold_answer": "Tammy Wynette",
+      "predicted_answer": "Tammy Wynette sang a duet with her ex-husband George Jones the same year he released the song \"The Battle.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac3ad225542995ef918c1da",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No, a gin and tonic is based on gin, while a paloma is based on tequila.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a74bdbf5542996c70cfadc7",
+      "agent_type": "reflexion",
+      "gold_answer": "Kato",
+      "predicted_answer": "Lee Jun-fan played the character Kato in \"The Green Hornet\" television series.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8195f35542995ce29dcc0c",
+      "agent_type": "reflexion",
+      "gold_answer": "Province of Buenos Aires",
+      "predicted_answer": "The Estadio Ciudad de La Plata, also known as Estadio \u00danico, is owned by the Province of Buenos Aires.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5adbe1e755429947ff173853",
+      "agent_type": "reflexion",
+      "gold_answer": "1932",
+      "predicted_answer": "The American Pre-Code comedy film featuring an American actress, dancer, and singer, widely known for performing in films and RKO's musical films, was released in 1932.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a904e725542995651fb5118",
+      "agent_type": "reflexion",
+      "gold_answer": "nine",
+      "predicted_answer": "The song \"Bette Davis Eyes,\" written by Donna Weiss and Jackie DeShannon, spent nine weeks at No. 1 on the \"Billboard\" Hot 100.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab292e4554299545a2cf993",
+      "agent_type": "reflexion",
+      "gold_answer": "Conservative",
+      "predicted_answer": "The man who officially opened the Royal Spa Centre in 1972, Anthony Eden, was a member of the Conservative Party.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8514545542992a431d1ad2",
+      "agent_type": "reflexion",
+      "gold_answer": "Salaam Bombay",
+      "predicted_answer": "The Oscar-nominated film written by the screenwriter who wrote a 1991 romantic drama based upon a screenplay by Sooni Taraporevala is \"Salaam Bombay.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae3345f55429928c4239682",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "Yes, both Tim McIlrath and Spike Slawson are American punk rock musicians.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8d7341554299441c6b9fe5",
+      "agent_type": "reflexion",
+      "gold_answer": "President Richard Nixon",
+      "predicted_answer": "Milhouse was named after President Richard Nixon.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5adf44985542993a75d2646d",
+      "agent_type": "reflexion",
+      "gold_answer": "Crambidae",
+      "predicted_answer": "The genus of moth in India that contains only one species is Indogrammodes.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "looping",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5a89372855429951533612e6",
+      "agent_type": "reflexion",
+      "gold_answer": "6.213 km long",
+      "predicted_answer": "The length of the track where the 2013 Liqui Moly Bathurst 12 Hour was staged is 6.213 km.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab381b155429969a97a816b",
+      "agent_type": "reflexion",
+      "gold_answer": "US 60",
+      "predicted_answer": "U.S. Highway 60",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae3b4d05542992f92d82349",
+      "agent_type": "reflexion",
+      "gold_answer": "Todd Phillips",
+      "predicted_answer": "The director of the 2003 film that has scenes filmed at the Quality Cafe in Los Angeles is Todd Phillips.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a8efd3c55429918e830d179",
+      "agent_type": "reflexion",
+      "gold_answer": "no",
+      "predicted_answer": "No, The New Pornographers is a Canadian rock band, while Kings of Leon is an American rock band.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a02235542996c55b2dcd3",
+      "agent_type": "reflexion",
+      "gold_answer": "Aleksander Ford",
+      "predicted_answer": "Pablo Trapero was born on 4 October 1971, while Aleksander Ford was born on 24 November 1908. Therefore, Aleksander Ford was born first.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae78ec5554299540e5a5605",
+      "agent_type": "reflexion",
+      "gold_answer": "Ulster County",
+      "predicted_answer": "Guitars for Wounded Warriors was recorded in the village of New Paltz, which is located in Ulster County, New York.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a52745542996c55b2dd4f",
+      "agent_type": "reflexion",
+      "gold_answer": "Sir Francis Nethersole",
+      "predicted_answer": "Francis Nethersole was born in 1587, while Elizabeth Stuart was born on 19 August 1596. Therefore, Francis Nethersole was born first.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ac1f7f355429964131be2ae",
+      "agent_type": "reflexion",
+      "gold_answer": "ingredients in beer",
+      "predicted_answer": "The Hacker-Pschorr Brewery must limit the ingredients in beer to comply with German regulations, specifically the Reinheitsgebot Purity Law.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a736bfa5542991f29ee2e03",
+      "agent_type": "reflexion",
+      "gold_answer": "Glenn Hughes",
+      "predicted_answer": "Glenn Hughes is older than Ross Lynch.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5addfe6c5542997dc790710e",
+      "agent_type": "reflexion",
+      "gold_answer": "March 28, 1941",
+      "predicted_answer": "The creator of the current arrangement of the \"Simpson's Theme,\" Alf Clausen, was born on March 28, 1941.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7a0a965542996c55b2dce7",
+      "agent_type": "reflexion",
+      "gold_answer": "standard gauge track",
+      "predicted_answer": "The Southern Railway runs via the first mountain railway built in Europe to use standard gauge track.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7daae35542990b8f503a1d",
+      "agent_type": "reflexion",
+      "gold_answer": "Saint Motel",
+      "predicted_answer": "Saint Motel has 4 members, while Curve has 2 members. Therefore, Saint Motel has more members than Curve.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5abbbd0f55429931dba144d5",
+      "agent_type": "reflexion",
+      "gold_answer": "dancer Gregory Hines",
+      "predicted_answer": "Maurice Hines and his brother Gregory Hines were famous for their contributions to dance and musical theater.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac3e8c65542997ea680c993",
+      "agent_type": "reflexion",
+      "gold_answer": "yes",
+      "predicted_answer": "The Augusta Canal is approximately 13 miles long, while the New Orleans Outfall Canals consist of three canals, but their total length is not specified in the context. Therefore, I cannot determine if they are the same length as the Augusta Canal.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "looping",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5ab6e84a554299710c8d1fab",
+      "agent_type": "reflexion",
+      "gold_answer": "Hawaii",
+      "predicted_answer": "Hawaii",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab5141a5542991779162d70",
+      "agent_type": "reflexion",
+      "gold_answer": "Academy of Motion Picture Arts and Sciences",
+      "predicted_answer": "The organization that presents the award for which Chris Noonan was nominated for his work in \"Babe\" is the Academy of Motion Picture Arts and Sciences (AMPAS).",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a832d225542990548d0b1bc",
+      "agent_type": "reflexion",
+      "gold_answer": "Cheltenham",
+      "predicted_answer": "The base of one of the three main British intelligence agencies, specifically the Government Communications Headquarters (GCHQ), is located in \"The Doughnut\" in the suburbs of Cheltenham.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ade8f5e55429975fa854f11",
+      "agent_type": "reflexion",
+      "gold_answer": "10 Rillington Place",
+      "predicted_answer": "The name of the movie in which Edwin Brown plays a man that executed at least 400 people, including William Joyce and John Amery, is \"10 Rillington Place.\"",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac1b7495542994ab5c67dd9",
+      "agent_type": "reflexion",
+      "gold_answer": "synth-pop",
+      "predicted_answer": "The solo artist that contributed to Real Damage, Tracy + the Plastics, is associated with the genre of electropop.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "looping",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5ae27edc5542992decbdcd2d",
+      "agent_type": "reflexion",
+      "gold_answer": "Roger Christian",
+      "predicted_answer": "Jake David Shapiro was best known for being the screenwriter of \"Battlefield Earth,\" which was directed by Roger Christian.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ab93287554299753720f78f",
+      "agent_type": "reflexion",
+      "gold_answer": "plant",
+      "predicted_answer": "Both Kniphofia and Baptisia are types of flowering plants.",
+      "is_correct": true,
+      "attempts": 2,
+      "failure_mode": "none",
+      "reflection_count": 1
+    },
+    {
+      "qid": "5ae2e27155429928c423952a",
+      "agent_type": "reflexion",
+      "gold_answer": "375 mi long",
+      "predicted_answer": "The context does not provide the length of the Wild Horse River, which has Wild Horse Creek as a tributary. Therefore, I cannot answer.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "looping",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5a7e567b55429949594199a0",
+      "agent_type": "reflexion",
+      "gold_answer": "Craig Newmark",
+      "predicted_answer": "The American internet entrepreneur who founded the company featured on 24 Hours on Craigslist is Craig Newmark.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac12fda5542994d76dccdb0",
+      "agent_type": "reflexion",
+      "gold_answer": "Pan American Games",
+      "predicted_answer": "Jo Ann Terry won the 80 m hurdles event at the 1963 Pan American Games.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae655c855429908198fa599",
+      "agent_type": "reflexion",
+      "gold_answer": "Cognizant",
+      "predicted_answer": "The name of the American multinational corporation that provides IT services, headquartered in New Jersey, and acquired Mirabeau is Cognizant.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae3cf7e5542990afbd1e1e2",
+      "agent_type": "reflexion",
+      "gold_answer": "Presque Isle",
+      "predicted_answer": "The 3112 acre Pennsylvania state park that took over 11,000 years to make due to the wave action of Lake Erie is called Presque Isle State Park.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ae3dde35542992f92d823a4",
+      "agent_type": "reflexion",
+      "gold_answer": "Select Security Stadium",
+      "predicted_answer": "Benjamin Halfpenny played for Widnes, St. Helens, and Warrington, but the context does not specify the home grounds of these clubs. Therefore, I cannot answer.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "looping",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5adccafb5542992c1e3a2401",
+      "agent_type": "reflexion",
+      "gold_answer": "Isabelle Mergault",
+      "predicted_answer": "Guillaume Canet chaired the ceremony in which the film written by Canet and Philippe Lefebvre won the award for Best Film.",
+      "is_correct": false,
+      "attempts": 3,
+      "failure_mode": "looping",
+      "reflection_count": 2
+    },
+    {
+      "qid": "5adf01425542995ec70e8f53",
+      "agent_type": "reflexion",
+      "gold_answer": "0.9 s.",
+      "predicted_answer": "The Deal Timeball can be off from Coordinated Universal Time (UTC) by up to 0.9 seconds.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac5247c55429924173fb602",
+      "agent_type": "reflexion",
+      "gold_answer": "Halestorm",
+      "predicted_answer": "\"Apocalyptic\" is a song sung by Lzzy Hale from the group Halestorm.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5a7f8a535542994857a76778",
+      "agent_type": "reflexion",
+      "gold_answer": "2,523",
+      "predicted_answer": "The town that the Pineground Bridge formerly carried Depot Road over the Suncook River into has a population of 2,523.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    },
+    {
+      "qid": "5ac36a07554299218029dbd5",
+      "agent_type": "reflexion",
+      "gold_answer": "Albuquerque, New Mexico",
+      "predicted_answer": "The American rock band that released their album on March 19, 2012, is The Shins, and they are from Albuquerque, New Mexico.",
+      "is_correct": true,
+      "attempts": 1,
+      "failure_mode": "none",
+      "reflection_count": 0
+    }
+  ],
+  "extensions": [
+    "structured_evaluator",
+    "reflection_memory",
+    "benchmark_report_json",
+    "mock_mode_for_autograding"
+  ],
+  "discussion": "Reflexion helps when the first attempt stops after the first hop or drifts to a wrong second-hop entity. The tradeoff is higher attempts, token cost, and latency. In a real report, students should explain when the reflection memory was useful, which failure modes remained, and whether evaluator quality limited gains."
+}
